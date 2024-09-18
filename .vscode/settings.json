@@ -1,0 +1,39 @@
+{
+    "[python]": {
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4,
+		"diffEditor.ignoreTrimWhitespace": false,
+		"editor.formatOnType": true,
+		"editor.wordBasedSuggestions": "off"
+	},
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/__pycache__": true
+    },
+    "python.autoComplete.extraPaths": [
+        "./src",
+    ],
+    "python.analysis.extraPaths": [
+        "./src",
+    ],
+	"python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+	"python.terminal.activateEnvironment": true,
+	"python.REPL.enableREPLSmartSend": false,
+	"python.languageServer": "Pylance",
+	"python.analysis.typeCheckingMode": "off",
+	"terminal.integrated.showExitAlert": false,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.profiles.windows": {
+        "Command Prompt": {
+            "path": [
+                "${env:windir}/System32/cmd.exe",
+                "${env:windir}/SysWOW64/cmd.exe"
+            ]
+        }
+    }
+}
