@@ -80,7 +80,6 @@ set SECOND=%SECOND:~-2%
 set TIMESTAMP=%YEAR%%MONTH%%DAY%-%HOUR%%MINUTE%%SECOND%
 
 :: 빌드 이름. (오버라이드)
-:: set BUILDNAME=dduk-unknown
 set BUILDNAME=%ROOTNAME%
 
 :: 빌드 파일 경로. (오버라이드)
@@ -89,8 +88,14 @@ set BUILDFILEPATH=%BUILDBINPATH%\%BUILDNAME%.exe
 :: 디버그 빌드 파일 경로. (오버라이드)
 set DEBUGBUILDFILEPATH=%BUILDBINPATH%\%BUILDNAME%\_internal\%BUILDNAME%.exe
 
-:: 빌드시 CLI 감추기 여부 설정. (오버라이드)
+:: 빌드시 콘솔창 감추기. (오버라이드)
 set IS_BUILD_BIN_NOCONSOLE=false
 
 :: 빌드시 디버그용 정보 포함 여부 설정. (오버라이드)
 set IS_BUILD_BIN_DEBUGINFO=false
+
+:: 에그 인포 이름. 빌드 이름에 하이픈이 들어있을 경우 언더바로 변환. (오버라이드)
+set EGGINFONAME=%BUILDNAME:-=_%.egg-info
+
+:: 빌드 파일을 만들면서 생기는 에그 인포 디렉토리 경로. (오버라이드)
+set BUILDEGGINFOPATH=%SOURCEPATH%\%EGGINFONAME%

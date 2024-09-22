@@ -1,4 +1,5 @@
 @echo off
+:: chcp 65001 >nul
 ::------------------------------------------------------------------------
 :: 가상 환경 관련 통합 배치 파일. (Windows 전용)
 ::------------------------------------------------------------------------
@@ -160,13 +161,6 @@ exit /b 0
 
 	:: C:\ProgramData\dduk-python\dduk-application\{projectName}\logs 폴더 생성.
 	if not exist "%APPLICATIONDATALOGSPATH%" ( mkdir "%APPLICATIONDATALOGSPATH%" )
-
-	:: 패키지 목록 확장 설정.
-	if exist "%ROOTPATH%\venv-update-override.bat" (
-		set IS_VENV_UPDATE_OVERRIDE=1
-		call "venv-update-override.bat"
-		set IS_VENV_UPDATE_OVERRIDE=
-	)
 
 	:: 현재 가상 환경에 설치된 모든 패키지 확인.
 	python -m pip list
