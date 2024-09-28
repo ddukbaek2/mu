@@ -1,9 +1,8 @@
 ﻿//------------------------------------------------------------------------------
 // 헤더 파일 목록.
 //------------------------------------------------------------------------------
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
+#include <stdlib.h> // malloc, free, size_t
+#include <stdint.h> // size_t
 #include "list.h"
 
 
@@ -39,31 +38,27 @@ void list_destroy(list_instance_ptr instance_ptr) {
 //------------------------------------------------------------------------------
 // 리스트 요소 추가.
 //------------------------------------------------------------------------------
-void list_add(list_instance instance, unknown_instance data)
-{
+void list_add(list_instance instance, unknown_instance data) {
 }
 
 
 //------------------------------------------------------------------------------
 // 리스트 요소 제거.
 //------------------------------------------------------------------------------
-void list_remove(list_instance instance, unknown_instance data)
-{
+void list_remove(list_instance instance, unknown_instance data) {
 }
 
 
 //------------------------------------------------------------------------------
 // 리스트 요소 설정.
 //------------------------------------------------------------------------------
-void list_set_value(list_instance instance, uint64_t index, unknown_instance data)
-{
+void list_set_value(list_instance instance, uint32_t index, unknown_instance data) {
 }
 
 //------------------------------------------------------------------------------
 // 리스트 요소 반환.
 //------------------------------------------------------------------------------
-unknown_instance list_get_value(list_instance instance, uint64_t index)
-{
+unknown_instance list_get_value(list_instance instance, uint32_t index) {
 	return NULL;
 }
 
@@ -71,7 +66,6 @@ unknown_instance list_get_value(list_instance instance, uint64_t index)
 //------------------------------------------------------------------------------
 // 리스트 요소 위치 반환.
 //------------------------------------------------------------------------------
-int64_t list_index_of(list_instance instance, unknown_instance data)
-{
+int32_t list_index_of(list_instance instance, unknown_instance data) {
 	return 0LU;
 }

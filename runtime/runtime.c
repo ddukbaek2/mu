@@ -1,10 +1,10 @@
 ﻿//------------------------------------------------------------------------------
 // 헤더 파일 목록.
 //------------------------------------------------------------------------------
-#include <stdio.h>
-#include <stdint.h>
+#include <stdio.h> // getchar
 #include "runtime.h"
 #include "list.h"
+#include "object.h"
 
 
 //------------------------------------------------------------------------------
@@ -12,8 +12,11 @@
 //------------------------------------------------------------------------------
 int main(int argc, char* argv[]) {
 	
-	list_instance instance = list_create();
+	//list_instance instance = list_create();
+	//list_add(instance, NULL);
 
-	printf("Hello, World!\n");
+	printf("Hello, World!");
+
+	while (getchar() != '\n');
 	return 0;
 }

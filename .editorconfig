@@ -1,4 +1,5 @@
-root = true
+root=true
 
 [*.{c,h,txt}]
-charset = utf-8-bom
+charset=utf-8-bom
+# charset=utf-8 # error.
