@@ -1,12 +1,12 @@
-//------------------------------------------------------------------------------
-// Çì´õ ÆÄÀÏ ¸ñ·Ï.
+ï»¿//------------------------------------------------------------------------------
+// í—¤ë” íŒŒì¼ ëª©ë¡.
 //------------------------------------------------------------------------------
 #pragma once
-#include "core.h"
+#include "common.h"
 
 
 //------------------------------------------------------------------------------
-// º¤ÅÍ.
+// ë²¡í„°.
 //------------------------------------------------------------------------------
 struct __vector__ {
 	size_t size;
@@ -18,7 +18,7 @@ struct __vector__ {
 
 
 //------------------------------------------------------------------------------
-// Çü½Ä ÀçÁ¤ÀÇ.
+// í˜•ì‹ ì¬ì •ì˜.
 //------------------------------------------------------------------------------
 typedef struct __vector__ vector;
 typedef struct __vector__* vector_instance;
@@ -26,7 +26,7 @@ typedef struct __vector__** vector_instance_ptr;
 
 
 //------------------------------------------------------------------------------
-// º¤ÅÍ ÇÔ¼ö ¸ñ·Ï.
+// ë²¡í„° í•¨ìˆ˜ ëª©ë¡.
 //------------------------------------------------------------------------------
 vector_instance vector_create();
 void vector_destroy(vector_instance_ptr instance_ptr);
@@ -44,3 +44,6 @@ unknown_instance vector_get_value(vector_instance instance, uint32_t index);
 int32_t vector_index_of(vector_instance instance, unknown_instance value);
 size_t vector_size_of(vector_instance instance);
 size_t vector_capacity_of(vector_instance instance);
+
+
+

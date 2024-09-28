@@ -22,3 +22,4 @@ project ("mu" C)
 add_subdirectory ("core")
 add_subdirectory ("mulang")
 add_subdirectory ("runtime")
+

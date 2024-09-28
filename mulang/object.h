@@ -1,9 +1,9 @@
-//------------------------------------------------------------------------------
-// Çì´õ ÆÄÀÏ ¸ñ·Ï.
+ï»¿//------------------------------------------------------------------------------
+// í—¤ë” íŒŒì¼ ëª©ë¡.
 //------------------------------------------------------------------------------
 #pragma once
 #include <stdint.h> // uint32_t
-
+#include "core.h"
 
 struct __object__ {
 	uint32_t unique_id;
@@ -13,3 +13,6 @@ struct __object__ {
 typedef struct __object__ object;
 typedef struct __object__* object_instance;
 typedef struct __object__** object_instance_ptr;
+
+
+

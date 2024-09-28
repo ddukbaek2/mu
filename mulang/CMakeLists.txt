@@ -1,4 +1,4 @@
-# 최소 요구 CMAKE 버전 설정.
+﻿# 최소 요구 CMAKE 버전 설정.
 cmake_minimum_required (VERSION 3.12)
 
 # 프로젝트 설정.

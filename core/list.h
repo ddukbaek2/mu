@@ -2,7 +2,7 @@
 // 헤더 파일 목록.
 //------------------------------------------------------------------------------
 #pragma once
-#include "core.h"
+#include "common.h"
 
 
 //------------------------------------------------------------------------------
@@ -50,3 +50,6 @@ void list_remove(list_instance instance, unknown_instance value);
 void list_set_value(list_instance instance, uint32_t index, unknown_instance value);
 unknown_instance list_get_value(list_instance instance, uint32_t index);
 int32_t list_index_of(list_instance instance, unknown_instance element);
+
+
+

@@ -1,5 +1,5 @@
-//------------------------------------------------------------------------------
-// Çì´õ ÆÄÀÏ ¸ñ·Ï.
+ï»¿//------------------------------------------------------------------------------
+// í—¤ë” íŒŒì¼ ëª©ë¡.
 //------------------------------------------------------------------------------
 #include <stdlib.h> // malloc, realloc, free, size_t
 #include <stdint.h> // size_t
@@ -8,13 +8,13 @@
 
 
 //------------------------------------------------------------------------------
-// Á¤ÀÇ ¸ñ·Ï.
+// ì •ì˜ ëª©ë¡.
 //------------------------------------------------------------------------------
 #define VECTOR_DEFAULT_CAPACITY 4
 
 
 //------------------------------------------------------------------------------
-// º¤ÅÍ »ı¼º.
+// ë²¡í„° ìƒì„±.
 //------------------------------------------------------------------------------
 vector_instance vector_create() {
 	vector_instance instance = (vector_instance)malloc(sizeof(vector));
@@ -30,7 +30,7 @@ vector_instance vector_create() {
 
 
 //------------------------------------------------------------------------------
-// º¤ÅÍ ÆÄ±«.
+// ë²¡í„° íŒŒê´´.
 //------------------------------------------------------------------------------
 void vector_destroy(vector_instance_ptr instance_ptr) {
 	if (instance_ptr == NULL)
@@ -46,7 +46,7 @@ void vector_destroy(vector_instance_ptr instance_ptr) {
 
 
 //------------------------------------------------------------------------------
-// º¤ÅÍ Å©±â Á¶Á¤.
+// ë²¡í„° í¬ê¸° ì¡°ì •.
 //------------------------------------------------------------------------------
 void vector_resize(vector_instance instance, size_t new_capacity) {
 	if (instance != NULL) {
@@ -59,7 +59,7 @@ void vector_resize(vector_instance instance, size_t new_capacity) {
 
 
 //------------------------------------------------------------------------------
-// º¤ÅÍ ¸Ç µÚ¿¡ ¿ä¼Ò Ãß°¡.
+// ë²¡í„° ë§¨ ë’¤ì— ìš”ì†Œ ì¶”ê°€.
 //------------------------------------------------------------------------------
 void vector_pushback(vector_instance instance, unknown_instance value) {
 	if (instance != NULL) {
@@ -74,7 +74,7 @@ void vector_pushback(vector_instance instance, unknown_instance value) {
 
 
 //------------------------------------------------------------------------------
-// º¤ÅÍ ¸Ç µÚ ¿ä¼Ò Á¦°Å.
+// ë²¡í„° ë§¨ ë’¤ ìš”ì†Œ ì œê±°.
 //------------------------------------------------------------------------------
 void vector_popback(vector_instance instance) {
 	if (instance != NULL) {
@@ -84,7 +84,7 @@ void vector_popback(vector_instance instance) {
 
 
 //------------------------------------------------------------------------------
-// º¤ÅÍ ¿ä¼Ò Ãß°¡.
+// ë²¡í„° ìš”ì†Œ ì¶”ê°€.
 //------------------------------------------------------------------------------
 void vector_add(vector_instance instance, unknown_instance value) {
 
@@ -92,7 +92,7 @@ void vector_add(vector_instance instance, unknown_instance value) {
 
 
 //------------------------------------------------------------------------------
-// º¤ÅÍ ¿ä¼Ò Ãß°¡.
+// ë²¡í„° ìš”ì†Œ ì¶”ê°€.
 //------------------------------------------------------------------------------
 void vector_insert(vector_instance instance, uint32_t index, unknown_instance value) {
 
@@ -100,14 +100,14 @@ void vector_insert(vector_instance instance, uint32_t index, unknown_instance va
 
 
 //------------------------------------------------------------------------------
-// º¤ÅÍ ¿ä¼Ò Á¦°Å.
+// ë²¡í„° ìš”ì†Œ ì œê±°.
 //------------------------------------------------------------------------------
 void vector_remove(vector_instance instance, unknown_instance value) {
 
 }
 
 //------------------------------------------------------------------------------
-// º¤ÅÍ ¿ä¼Ò Á¦°Å.
+// ë²¡í„° ìš”ì†Œ ì œê±°.
 //------------------------------------------------------------------------------
 void vector_remove_at(vector_instance instance, uint32_t index) {
 
@@ -115,7 +115,7 @@ void vector_remove_at(vector_instance instance, uint32_t index) {
 
 
 //------------------------------------------------------------------------------
-// º¤ÅÍ ¿ä¼Ò Àç¼³Á¤.
+// ë²¡í„° ìš”ì†Œ ì¬ì„¤ì •.
 //------------------------------------------------------------------------------
 void vector_set_value(vector_instance instance, uint32_t index, unknown_instance value) {
 	if (instance != NULL) {
@@ -128,7 +128,7 @@ void vector_set_value(vector_instance instance, uint32_t index, unknown_instance
 
 
 //------------------------------------------------------------------------------
-// º¤ÅÍ ¿ä¼Ò ¹İÈ¯.
+// ë²¡í„° ìš”ì†Œ ë°˜í™˜.
 //------------------------------------------------------------------------------
 unknown_instance vector_get_value(vector_instance instance, uint32_t index) {
 	if (instance != NULL) {
@@ -147,7 +147,7 @@ unknown_instance vector_get_value(vector_instance instance, uint32_t index) {
 
 
 //------------------------------------------------------------------------------
-// º¤ÅÍ ¿ä¼ÒÀÇ À§Ä¡ ¹İÈ¯.
+// ë²¡í„° ìš”ì†Œì˜ ìœ„ì¹˜ ë°˜í™˜.
 //------------------------------------------------------------------------------
 int32_t vector_index_of(vector_instance instance, unknown_instance value) {
 	return 0;
@@ -155,7 +155,7 @@ int32_t vector_index_of(vector_instance instance, unknown_instance value) {
 
 
 //------------------------------------------------------------------------------
-// º¤ÅÍÀÇ Å©±â ¹İÈ¯.
+// ë²¡í„°ì˜ í¬ê¸° ë°˜í™˜.
 //------------------------------------------------------------------------------
 size_t vector_size_of(vector_instance instance) {
 	if (instance != NULL) {
@@ -166,7 +166,7 @@ size_t vector_size_of(vector_instance instance) {
 
 
 //------------------------------------------------------------------------------
-// º¤ÅÍÀÇ ÇÒ´ç·® ¹İÈ¯.
+// ë²¡í„°ì˜ í• ë‹¹ëŸ‰ ë°˜í™˜.
 //------------------------------------------------------------------------------
 size_t vector_capacity_of(vector_instance instance) {
 	if (instance != NULL) {
@@ -174,3 +174,6 @@ size_t vector_capacity_of(vector_instance instance) {
 	}
 	return 0;
 }
+
+
+
