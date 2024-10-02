@@ -23,7 +23,7 @@ file(GLOB RUNTIME_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/*.c")
 add_executable (runtime ${RUNTIME_SOURCES})
 
 # 정적 라이브러리 링크.
-target_link_libraries(runtime PRIVATE core)
+target_link_libraries(runtime PRIVATE cxl)
 target_link_libraries(runtime PRIVATE mulang)
 
 # 컴파일러 설정.

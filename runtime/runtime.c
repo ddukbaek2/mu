@@ -2,11 +2,9 @@
 // 헤더 파일 목록.
 //------------------------------------------------------------------------------
 #include <stdio.h> // getchar
-#include "runtime.h"
-#include "list.h"
-#include "object.h"
-#include "mulang.h"
 #include <locale.h> // setlocale, LC_ALL
+#include "mulang.h"
+#include "runtime.h"
 
 
 //------------------------------------------------------------------------------
@@ -28,6 +26,8 @@ int main(int argc, char* argv[]) {
 	while (getchar() != '\n');
 	return 0;
 }
+
+
 
 
 

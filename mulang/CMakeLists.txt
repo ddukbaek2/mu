@@ -5,11 +5,11 @@ cmake_minimum_required (VERSION 3.12)
 project(mulang)
 
 # 정적 라이브러리 생성.
-file(GLOB CORE_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/*.c")
-add_library (mulang STATIC ${CORE_SOURCES})
+file(GLOB MULANG_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/*.c")
+add_library (mulang STATIC ${MULANG_SOURCES})
 
 # 정적 라이브러리 링크.
-target_link_libraries(mulang PRIVATE core)
+target_link_libraries(mulang PRIVATE cxl)
 
 # 헤더파일 경로 공개.
 # 다른 형제 프로젝트에서 헤더 파일 사용 가능.

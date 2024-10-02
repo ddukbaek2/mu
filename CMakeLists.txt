@@ -19,7 +19,7 @@ endif()
 project ("mu" C)
 
 # 서브 프로젝트 설정.
-add_subdirectory ("core")
+add_subdirectory ("cxl")
 add_subdirectory ("mulang")
 add_subdirectory ("runtime")
 
