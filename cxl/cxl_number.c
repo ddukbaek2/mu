@@ -4,8 +4,9 @@
 //#include <stdio.h> // fprintf, stderr
 #include <stdlib.h> // malloc, realloc, free
 #include <string.h> // memmove
-#include "cxl_number.h"
 #include "cxl_bytes.h"
+#include "cxl_number.h"
+
 
 
 //------------------------------------------------------------------------------

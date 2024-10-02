@@ -2,13 +2,14 @@
 // 헤더 파일 목록.
 //------------------------------------------------------------------------------
 #pragma once
-#include <stdint.h> // int32_t, uint32_t, size_t
+#include <stdint.h> // size_t, uint8_t, int32_t, uint32_t
 
 
 //------------------------------------------------------------------------------
 // 형식 재정의.
 //------------------------------------------------------------------------------
 typedef void* object;
+typedef uint8_t* bytes;
 struct __cxl_bytes__;
 typedef struct __cxl_bytes__* cxl_bytes;
 struct __cxl_array__;
